@@ -1,0 +1,227 @@
+<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Encuesta de Egresados</title> <link rel="stylesheet" href="estilos.css"> </head> <body> <!-- HEADER --> <div class="header"> <img src="baja.png" class="logo"> <div class="titulo"> <h1>Encuesta de Seguimiento de Egresados</h1> <p>CECyTE Baja California</p> </div> <img src="cecyte.png" class="logo"> </div> <!-- CONTENIDO --> <div class="container"> <form id="formulario"> 
+
+
+<!-- DATOS GENERALES -->
+<h2>Datos Generales</h2>
+
+<label>Nombre completo</label>
+<input type="text" name="nombre" required>
+
+<label>Correo electronico</label>
+<input type="email" name="correo" required>
+
+<label>Grupo</label>
+<input type="text" name="grupo" required>
+
+<label>Código Postal</label>
+<input type="text" name="cp" required>
+
+<label>Teléfono/celular(10 digitos)</label>
+<input type="text" name="telefono" required>
+
+<label>¿Con quién vives?</label>
+<select name="vive" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Compartiendo vivienda con familiares(Tios, Abuelos, etc.)</option>
+<option>Pareja (con o sin hijos)</option>
+<option>Amigos</option>
+<option>con tus padres</option>
+<option>Solo</option>
+</select>
+
+<label>¿Participaste en algún programa especial?</label>
+<select name="programa" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Militarizado</option>
+<option>Formación dual</option>
+<option>Becas</option>
+<option>Prgrama incluyente</option>
+<option>No aplica</option>
+</select>
+
+<label>¿Autorizas compartir tu información para alguna empresa o vacante?</label>
+<select name="autorizacion" required >
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Tienes alguna discapacidad?</label>
+<select name="discapacidad" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Perteneces a un grupo étnico?</label>
+<select name="etnico" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Hablas alguna lengua?</label>
+<select name="lengua" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Hablas otro idioma diferente al español?</label>
+<select name="idioma" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Has emprendido algún negocio?</label>
+<select name="negocio" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Al egresar del bachillerato continuaras con tus estudios?</label>
+<select name="continuar estudios" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Aprovaste el examen de admision?</label>
+<select name="examen" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿A que institucion deseas entrar?</label>
+<input type="text" name="institucion entrar" required>
+
+<!-- SEGUIMIENTO -->
+<h2>Seguimiento de Egresados</h2>
+
+<label>¿En que frecuencia usas tus conocimientos y habilidades que adquiriste en el Bachillerato?</label>
+<select name="frecuencia"> 
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Muy frecuente</option>
+<option>Frecuente</option>
+<option>Poco frecuente</option>
+<option>Rara vez</option>
+</select>
+
+<label>¿Qué conocimientos técnicos consideras que te hicieron falta durante tu Bachillerato?</label>
+<select name="conocimientos-tecnicos" required> 
+  <option value="" selected disabled>Seleccione una opción</option>
+  <option>Matematicas</option>
+<option>Ciencias</option>
+<option>Competencias relacionadas con tu carrera</option>
+<option>Investigación</option>
+</select>
+
+<label>¿Qué habilidades consideras que te hicieron falta durante tu Bachillerato?</label>
+<select name="conocimientos_falta" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+  <option>Comunicacion</option>
+<option>Trabajo en equipo</option>
+<option>Liderazgi</option>
+</select>
+<label>¿Actividad a la que te estas dedicando?</label>
+<select name="conocimientos_dedicando" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+  <option>Matematicas</option>
+<option>Ciencias</option>
+<option>Competencias relacionadas con tu carrera</option>
+<option>Investigación</option>
+</select>
+
+<!-- ESTUDIOS -->
+<h2>Continuidad de Estudios</h2>
+
+<label>Nombre de la institución donde estas estudiando actualmente:(Nota:Nombre completo sin abreciaturas)</label>
+<input type="text" name="institucion" required>
+
+<label>Ubicación</label>
+<select name="ubicacion de la institucion" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Dentro del país</option>
+<option>Fuera del país</option>
+</select>
+
+<label> ¿Que tipo de institución es?</label>
+<select name="tipo" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Pública</option>
+<option>Privada</option>
+</select>
+
+<label>Nombre de la carrera en la que estas estudiando:(Nota:Nombre completo sin abreviaturas)</label>
+<input type="text" name="carrera" required>
+
+<label>¿La carrera que estas estudiando actualmente es afín a la que estudiaste en el bachillerato?</label>
+<select name="afin" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<!-- LABORAL -->
+<h2>Datos Laborales</h2>
+
+<label>Nombre de la empresa en donde estas trabajando</label>
+<input type="text" name="empresa" required>
+
+<label>Giro de la empresa:(Ejemplo:Automotriz, Servicios, Agropecuario, Industrial, Manufactura.)</label>
+<input type="text" name="giro" required>
+
+<label>¿ Cual es tu puesto o la actividad principal que realizas en tu trabajo?</label>
+<input type="text" name="puesto" required>
+
+<label>Esta actividad o puesto ¿tiene relacion con la carrera que estudias en el bachillerato?</label>
+<select name="relacion" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Si</option>
+<option>No</option>
+</select>
+
+<label>¿Cuanto ganas aproximadamente mensualmente?</label>
+<select name="ingreso" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>0 a 3000</option>
+<option>3000 a 6000</option>
+<option>6000 a 10000</option>
+<option>Más de 10000</option>
+</select>
+
+<label>¿Cuales son las causas por las que no estas estudiando o trabajando?</label>
+<select name="razon" required>
+  <option value="" selected disabled>Seleccione una opción</option>
+<option>Falta de interés</option>
+<option>Falta de recursos</option>
+<option>Trabajo</option>
+<option>Embarazo/Maternidad</option>
+<option>No encuentro trabajo</option>
+<option>Otro</option>
+</select>
+
+<label>Otra razón</label>
+<textarea name="otra_razon" required></textarea>
+
+<label>Comentarios y sugerencias</label>
+<textarea name="comentarios" required></textarea>
+
+<button type="submit">Enviar encuesta</button>
+
+</form>
+
+<div id="mensaje" class="success">
+✅ Respuesta enviada correctamente
+</div>
+
+</div>
+
+<!-- JS -->
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
